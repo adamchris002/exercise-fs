@@ -70,27 +70,57 @@ var beverages = "Teh";
 //     console.log(bilangan + " Adalah Bilangan Ganjil")
 // }
 
-var minuman = "Sweet Tea"
+// var minuman = "Sweet Tea"
 
-switch (minuman) {
-    case "":
-        console.log("Input minuman")
-        break;
-    case "Sweet Tea":
-        console.log("You choose Sweet Tea, thanks")
-        break;
-    case "Plain Tea": 
-        console.log("You choose Plain Tea, thanks")
-        break;
-    case "Boba":
-        console.log("You choose Boba, thanks")
-        break;
-    case "Milk Coffee":
-        console.log("You choose Milk Coffee, thanks")
-        break;
-    case "Choco Ice":
-        console.log("You choose Choco Ice thanks")
-        break;
-    default:
-        console.log("minuman is not defined")
+// switch (minuman) {
+//     case "":
+//         console.log("Input minuman")
+//         break;
+//     case "Sweet Tea":
+//         console.log("You choose Sweet Tea, thanks")
+//         break;
+//     case "Plain Tea": 
+//         console.log("You choose Plain Tea, thanks")
+//         break;
+//     case "Boba":
+//         console.log("You choose Boba, thanks")
+//         break;
+//     case "Milk Coffee":
+//         console.log("You choose Milk Coffee, thanks")
+//         break;
+//     case "Choco Ice":
+//         console.log("You choose Choco Ice thanks")
+//         break;
+//     default:
+//         console.log("minuman is not defined")
+// }
+
+var coupon = "FreeOngkir"
+var pembelian = 35000
+
+if (coupon === "FreeOngkir") {
+    if (pembelian >= 50000) {
+        var potongan = pembelian * 0.1
+        console.log("Total pembelian Anda Rp. " + (pembelian - potongan))
+    }
+    else if (pembelian <= 50000 && pembelian >= 30000) {
+        var potongan = pembelian * 0.05
+        console.log("Total pembelian Anda Rp. " + (pembelian - potongan))
+    }
+    else {
+        var potongan = pembelian * 0.025
+        console.log("Total pembelian Anda Rp. " + (pembelian - potongan))
+    }
+}
+else if (coupon === "Free15%") {
+    if (pembelian >= 30000) {
+        var potongan = pembelian * 0.15
+        console.log("Total pembelian Anda Rp. " + (pembelian - potongan))
+    }
+    else {
+        console.log("Total pembelian Anda Rp. " + pembelian)
+    }
+}
+else {
+    console.log("Coupon yang Anda pilih tidak ada")
 }
