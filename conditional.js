@@ -26,19 +26,46 @@
 var beverages = "Teh";
 //.toLowerCase() => membuat jadi huruf kecil
 
-switch(beverages.toLowerCase()) {
-    case 'kopi':
-        console.log("Minuman yang Anda pilih adalah kopi")
-        break;
-    case 'air':
-        console.log("Minuman yang Anda pilih adalah air")
-        break;
-    case 'teh':
-        console.log("Minuman yang Anda pilih adalah teh")
-        break;
-    case 'pocari':
-        console.log("Minuman yang Anda pilih adalah pocari")
-        break;
-    default:
-        console.log("Minuman yang Anda cari tidak ada")
+// switch(beverages.toLowerCase()) {
+//     case 'kopi':
+//         console.log("Minuman yang Anda pilih adalah kopi")
+//         break;
+//     case 'air':
+//         console.log("Minuman yang Anda pilih adalah air")
+//         break;
+//     case 'teh':
+//         console.log("Minuman yang Anda pilih adalah teh")
+//         break;
+//     case 'pocari':
+//         console.log("Minuman yang Anda pilih adalah pocari")
+//         break;
+//     default:
+//         console.log("Minuman yang Anda cari tidak ada")
+// }
+
+
+var nilai = 70;
+if (nilai >= 0 && nilai < 30) {
+    console.log("Nilai karakter kalian adalah E")
+}
+else if (nilai < 50 && nilai >= 30) {
+    console.log("Nilai karakter kalian adalah D")
+}
+else if (nilai < 70 && nilai >=50) {
+    console.log("Nilai karakter kalian adalah C")
+}
+else if (nilai < 85 && nilai >= 70) {
+    console.log("Nilai karakter kalian adalah B")
+}
+else {
+    console.log("Nilai karakter kalian adalah A")
+}
+
+var bilangan = 5;
+
+if (bilangan % 2 === 0) {
+    console.log(bilangan + " Adalah Bilangan Genap")
+}
+else {
+    console.log(bilangan + " Adalah Bilangan Ganjil")
 }
