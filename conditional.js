@@ -44,28 +44,53 @@ var beverages = "Teh";
 // }
 
 
-var nilai = 70;
-if (nilai >= 0 && nilai < 30) {
-    console.log("Nilai karakter kalian adalah E")
-}
-else if (nilai < 50 && nilai >= 30) {
-    console.log("Nilai karakter kalian adalah D")
-}
-else if (nilai < 70 && nilai >=50) {
-    console.log("Nilai karakter kalian adalah C")
-}
-else if (nilai < 85 && nilai >= 70) {
-    console.log("Nilai karakter kalian adalah B")
-}
-else {
-    console.log("Nilai karakter kalian adalah A")
-}
+// var nilai = 70;
+// if (nilai >= 0 && nilai < 30) {
+//     console.log("Nilai karakter kalian adalah E")
+// }
+// else if (nilai < 50 && nilai >= 30) {
+//     console.log("Nilai karakter kalian adalah D")
+// }
+// else if (nilai < 70 && nilai >=50) {
+//     console.log("Nilai karakter kalian adalah C")
+// }
+// else if (nilai < 85 && nilai >= 70) {
+//     console.log("Nilai karakter kalian adalah B")
+// }
+// else {
+//     console.log("Nilai karakter kalian adalah A")
+// }
 
-var bilangan = 5;
+// var bilangan = 5;
 
-if (bilangan % 2 === 0) {
-    console.log(bilangan + " Adalah Bilangan Genap")
-}
-else {
-    console.log(bilangan + " Adalah Bilangan Ganjil")
+// if (bilangan % 2 === 0) {
+//     console.log(bilangan + " Adalah Bilangan Genap")
+// }
+// else {
+//     console.log(bilangan + " Adalah Bilangan Ganjil")
+// }
+
+var minuman = "Sweet Tea"
+
+switch (minuman) {
+    case "":
+        console.log("Input minuman")
+        break;
+    case "Sweet Tea":
+        console.log("You choose Sweet Tea, thanks")
+        break;
+    case "Plain Tea": 
+        console.log("You choose Plain Tea, thanks")
+        break;
+    case "Boba":
+        console.log("You choose Boba, thanks")
+        break;
+    case "Milk Coffee":
+        console.log("You choose Milk Coffee, thanks")
+        break;
+    case "Choco Ice":
+        console.log("You choose Choco Ice thanks")
+        break;
+    default:
+        console.log("minuman is not defined")
 }
