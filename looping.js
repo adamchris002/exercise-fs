@@ -83,7 +83,10 @@ var number = 5;
 //     string = ""
 // }
 
+var number = 10;
 
-
+for (var i = 0; i < number; i++) {
+    
+}
 
 
