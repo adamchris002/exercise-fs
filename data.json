@@ -1,0 +1,18 @@
+[
+    {
+        "Id" : 1,
+        "Name" : "Adam",
+        "Age" : 20, 
+        "Job" : "driver gojek",
+        "isSingle" : true,
+        "Hobbies" : ["Main Bola"]
+    }, 
+    {
+        "Id" : 2,
+        "Name" : "Agnes",
+        "Age" : 21, 
+        "Job" : "mahasiswa",
+        "isSingle" : true,
+        "Hobbies" : ["Nonton Film"]
+    }
+]
