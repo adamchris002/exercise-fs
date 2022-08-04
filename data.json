@@ -1,18 +1,35 @@
 [
-    {
-        "Id" : 1,
-        "Name" : "Adam",
-        "Age" : 20, 
-        "Job" : "driver gojek",
-        "isSingle" : true,
-        "Hobbies" : ["Main Bola"]
-    }, 
-    {
-        "Id" : 2,
-        "Name" : "Agnes",
-        "Age" : 21, 
-        "Job" : "mahasiswa",
-        "isSingle" : true,
-        "Hobbies" : ["Nonton Film"]
-    }
+   {
+      "id": 1,
+      "name": "Adam",
+      "age": 20,
+      "gender": "male",
+      "job": "driver gojek",
+      "isSingle": true,
+      "hobbies": [
+         "Main Bola"
+      ]
+   },
+   {
+      "id": 2,
+      "name": "Agnes",
+      "age": 21,
+      "gender": "female",
+      "job": "mahasiswa",
+      "isSingle": true,
+      "hobbies": [
+         "Nonton Film"
+      ]
+   },
+   {
+      "id": 3,
+      "name": "Joko",
+      "age": 22,
+      "gender": "male",
+      "job": "tukang fotokopi",
+      "isSingle": true,
+      "hobbies": [
+         "fotokopi"
+      ]
+   }
 ]

@@ -9,12 +9,57 @@
 
 const fs = require('fs')
 
-const getData = () => {
+const getEmployeesData = () => {
     let programmer = fs.readFileSync('./data.json', 'utf8');
     //untuk mengubah teks file menjadi object javascript yang bisa digunakan
     programmer = JSON.parse(programmer)
 
-    console.log(programmer);
+    return programmer;
 };
 
-getData();
+const showData = () => {
+    let employees = getEmployeesData();
+    //destructuring
+    employees.forEach((elements) => {
+        const {id, name, age, gender} = elements;
+        if (gender === "male") {
+            console.log(`${id}. (M) ${name}, ${age} years old`);
+        }
+        else if (gender === "female") {
+            console.log(`${id}. (F) ${name}, ${age} years old`);
+        }
+        else {
+            console.log(`${id}. (O) ${name}, ${age} years old`);
+        }
+    });
+}
+
+
+
+// ...params => rest / spread parameter
+const addEmployee = (...params) => {
+    let employees = getEmployeesData();
+    let lastIndex = employees.length - 1;
+    let id = employees[lastIndex].id + 1;
+    const [name, age, gender, job, isSingle, hobbies] = params;
+    let tempObj= {
+        id,
+        name,
+        age,
+        gender,
+        job,
+        isSingle,
+        hobbies: hobbies || [],
+    };
+    employees.push(tempObj);
+    save(employees);
+}
+
+const save = (employees) => {
+    let employeeString = JSON.stringify(employees, null, 3);
+    fs.writeFileSync("./data.json", employeeString);
+}
+
+
+addEmployee("Joko", 22, "male", "tukang fotokopi", true, ["fotokopi"]);
+showData();
