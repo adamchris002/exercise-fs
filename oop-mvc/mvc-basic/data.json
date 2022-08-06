@@ -1,0 +1,37 @@
+[
+   {
+      "id": 1,
+      "task": "Explore OOP dan MVC",
+      "status": true,
+      "createdAt": "2022-08-06",
+      "updatedAt": "2022-8-06"
+   },
+   {
+      "id": 2,
+      "task": "makan malem",
+      "status": false,
+      "createdAt": "2022-08-06",
+      "updatedAt": "2022-8-06"
+   },
+   {
+      "id": 3,
+      "task": "makan malem",
+      "status": false,
+      "createdAt": "2022-08-06T06:47:20.955Z",
+      "updatedAt": "2022-08-06T06:47:20.955Z"
+   },
+   {
+      "id": 4,
+      "task": "makan malem",
+      "status": true,
+      "createdAt": "2022-08-06T07:48:47.644Z",
+      "updatedAt": "2022-08-06T07:52:50.551Z"
+   },
+   {
+      "id": 5,
+      "task": "rebahan",
+      "status": false,
+      "createdAt": "2022-08-06T07:54:54.466Z",
+      "updatedAt": "2022-08-06T07:55:51.453Z"
+   }
+]
