@@ -31,5 +31,27 @@
       "hobbies": [
          "fotokopi"
       ]
+   },
+   {
+      "id": 4,
+      "name": "Joko",
+      "age": 22,
+      "gender": "male",
+      "job": "tukang fotokopi",
+      "isSingle": true,
+      "hobbies": [
+         "fotokopi"
+      ]
+   },
+   {
+      "id": 5,
+      "name": "Joko",
+      "age": 22,
+      "gender": "male",
+      "job": "tukang fotokopi",
+      "isSingle": true,
+      "hobbies": [
+         "fotokopi"
+      ]
    }
 ]
